@@ -1,21 +1,3 @@
-![euSouGlauco](src/main/resources/images/glauco.png)
-## Oi, eu sou Glauco Luiz! :D
-[![Github Badge](https://img.shields.io/badge/-Github-000?style=flat-square&logo=Github&logoColor=white&link=https://github.com/glaucolrc)](https://github.com/glaucolrc)
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/glaucolrc/)](https://www.linkedin.com/in/glaucolrc/)
-[![Instagram Badge](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/glauco_de_carvalho/)](https://www.instagram.com/glauco_de_carvalho/)
-[![Twitter Badge](https://img.shields.io/badge/-Twitter-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/glaucolrc)](https://twitter.com/glaucolrc)
-[![Youtube Badge](https://img.shields.io/badge/-YouTube-ff0000?style=flat-square&labelColor=ff0000&logo=youtube&logoColor=white&link=https://www.youtube.com/@glaucolrc)](https://www.youtube.com/@glaucolrc)
-
-
-### Sobre
-- Mestre em Ciência da Computação pela Universidade Federal de Sergipe [@ufs](https://www.sigaa.ufs.br/sigaa/public/programa/portal.jsf?id=710).
-- Administrador de Banco de Dados {SQL Server e Oracle} no Ministério Público de Sergipe [@mpse](https://www.mpse.mp.br/).
-- Especialista em Business Intelligence [@powerbi](https://powerbi.microsoft.com/pt-br/).
-- Desenvolvedor {backend e frontend}[@spring](https://spring.io/) | [@dotnet](https://dotnet.microsoft.com/pt-br/) | [@react](https://legacy.reactjs.org/) | [@angular](https://angular.io/).
-- Professor no Instituto Federal de Sergipe [@ifs](http://www.ifs.edu.br/) | [@curso](http://www.ifs.edu.br/cursos-nova-pagina/259-cursos/superiores/7916-tecnologia-em-analise-e-desenvolvimento-de-sistemas).
-- Curriculo Lattes [@lattes](http://lattes.cnpq.br/4026888519877759).
-
-
 <h1 align="left"> Construindo uma API REST usando Java e Spring Boot </h1>
 
 
