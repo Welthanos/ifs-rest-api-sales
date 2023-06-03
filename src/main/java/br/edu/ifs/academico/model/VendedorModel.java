@@ -20,7 +20,7 @@ public class VendedorModel {
     private String cpf;
 
     @Column(name = "dataNascimento", nullable = false)
-    private LocalDate dataNascimento;
+    private LocalDate data_nascimento;
 
     @Column(name = "ativo", nullable = false)
     private Boolean ativo;

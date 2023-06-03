@@ -25,4 +25,8 @@ public class ClienteForm {
     @Past(message = "A data de nascimento informada deve ser anterior ao dia atual.")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
+
+    @NotEmpty
+    @NotNull(message = "O campo Ativo não pode estar nulo.")
+    private Boolean ativo;
 }

@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfi
 
 /**
  * Classe que inicia a aplicação Spring Boot
- * @author Glauco Luiz Rezende de Carvalho
- * @email glauco.carvalho@academico.ifs.edu.br
+ * @author Welthanos
+ * @email welthanos.dev@gmail.com
  * @Date: 16/05/2023
  * @version 1.03
  **/

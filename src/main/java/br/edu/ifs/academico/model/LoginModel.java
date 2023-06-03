@@ -3,7 +3,6 @@ package br.edu.ifs.academico.model;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Entity
 @Data
