@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ClienteDto {
-    private Long idCliente;
+    private Long codigoCliente;
     private String nome;
     private String cpf;
     @JsonFormat(pattern = "dd/MM/yyyy")

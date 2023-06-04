@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class ProdutoModel {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_produto;
+    private Long codigo;
 
     @Column(name = "nome", length = 128, nullable = false, unique = true)
     private String nome;
@@ -19,8 +19,8 @@ public class ProdutoModel {
     @Column(name = "descricao", length = 256, nullable = false)
     private String descricao;
 
-    @Column(name = "preco_unitario", columnDefinition = "numeric(18, 2)", nullable = false)
-    private BigDecimal preco_unitario;
+    @Column(name = "precoUnitario", columnDefinition = "numeric(18, 2)", nullable = false)
+    private BigDecimal precoUnitario;
 
     @Column(name = "ativo", nullable = false)
     private Boolean ativo;

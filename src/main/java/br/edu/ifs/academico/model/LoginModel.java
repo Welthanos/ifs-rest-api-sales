@@ -10,7 +10,7 @@ import javax.persistence.*;
 public class LoginModel {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_login;
+    private Long codigo;
 
     @Column(name = "login", length = 256, nullable = false, unique = true)
     private String login;

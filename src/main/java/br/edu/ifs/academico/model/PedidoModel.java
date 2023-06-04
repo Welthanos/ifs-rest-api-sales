@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 public class PedidoModel {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_pedido;
+    private Long codigo;
 
     @Column(name = "valor", columnDefinition = "numeric(18, 2)", nullable = false)
     private BigDecimal valor;
@@ -21,13 +21,13 @@ public class PedidoModel {
     private Boolean status;
 
     @Column(name = "dataHora", nullable = false)
-    private LocalDateTime data_hora;
+    private LocalDateTime dataHora;
 
     @ManyToOne
-    @JoinColumn(name = "id_cliente", referencedColumnName = "id_cliente")
+    @JoinColumn(name = "codigoCliente", referencedColumnName = "codigo")
     private ClienteModel clienteModel;
 
     @ManyToOne
-    @JoinColumn(name = "id_vendedor", referencedColumnName = "id_vendedor")
+    @JoinColumn(name = "codigoVendedor", referencedColumnName = "codigo")
     private VendedorModel vendedorModel;
 }

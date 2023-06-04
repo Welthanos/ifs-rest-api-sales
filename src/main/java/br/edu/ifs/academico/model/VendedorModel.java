@@ -11,7 +11,7 @@ import java.time.LocalDate;
 public class VendedorModel {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_vendedor;
+    private Long codigo;
 
     @Column(name = "nome", length = 100, nullable = false)
     private String nome;
@@ -20,7 +20,7 @@ public class VendedorModel {
     private String cpf;
 
     @Column(name = "dataNascimento", nullable = false)
-    private LocalDate data_nascimento;
+    private LocalDate dataNascimento;
 
     @Column(name = "ativo", nullable = false)
     private Boolean ativo;

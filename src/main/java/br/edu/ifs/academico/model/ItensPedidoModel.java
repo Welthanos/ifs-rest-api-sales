@@ -10,16 +10,16 @@ import javax.persistence.*;
 public class ItensPedidoModel {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_itens_pedido;
+    private Long codigo;
 
     @Column(name = "quantidade", nullable = false)
     private Integer quantidade;
 
     @ManyToOne
-    @JoinColumn(name = "id_pedido", referencedColumnName = "id_pedido")
+    @JoinColumn(name = "codigoPedido", referencedColumnName = "codigo")
     private PedidoModel pedidoModel;
 
     @ManyToOne
-    @JoinColumn(name = "id_produto", referencedColumnName = "id_produto")
+    @JoinColumn(name = "codigoProduto", referencedColumnName = "codigo")
     private ProdutoModel produtoModel;
 }
