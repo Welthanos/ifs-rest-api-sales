@@ -10,12 +10,10 @@ import java.math.BigDecimal;
 @Data
 public class PedidoUpdateForm {
 
-    @NotEmpty
     @NotNull(message = "O valor do pedido não pode ser nulo.")
     @JsonFormat(pattern = "0.00")
     private BigDecimal valor;
 
-    @NotEmpty
     @NotNull(message = "O status do pedido não pode ser nulo.")
     private Boolean status;
 }

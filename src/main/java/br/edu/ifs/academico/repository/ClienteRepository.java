@@ -9,12 +9,6 @@ import java.util.Optional;
 @Repository
 public interface ClienteRepository extends JpaRepository<ClienteModel, Long> {
 
-    //Usando o operador LIKE
     List<ClienteModel> findByNomeContaining(String nome);
-
-    //Usando a cláusula ORDER BY DESC
-    List<ClienteModel> findByOrderByNomeDesc();
-
-    //Buscando através do CPF
     Optional<ClienteModel> findByCpf(String cpf);
 }

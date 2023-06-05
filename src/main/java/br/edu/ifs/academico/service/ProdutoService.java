@@ -41,7 +41,7 @@ public class ProdutoService {
             ProdutoModel produtoNovo = convertProdutoFormToProdutoModel(produtoForm);
             Optional<ProdutoModel> byNome = produtoRepository.findByNome(produtoNovo.getNome());
             if (byNome.isPresent()) {
-                throw new IllegalStateException("Nome do produto já registrado.");
+                throw new IllegalStateException("Nome do Produto já registrado.");
             }
             produtoNovo = produtoRepository.save(produtoNovo);
             return convertProdutoModelToProdutoDto(produtoNovo);
@@ -75,7 +75,7 @@ public class ProdutoService {
                 produtoRepository.deleteById(codigoProduto);
             }
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir o(a) Produto!");
+            throw new DataIntegrityException("Não é possível excluir o Produto!");
         }
     }
 

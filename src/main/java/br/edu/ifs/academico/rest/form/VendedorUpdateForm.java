@@ -12,7 +12,6 @@ public class VendedorUpdateForm {
     @Size(max = 256)
     private String nome;
 
-    @NotEmpty
     @NotNull(message = "O campo Ativo não pode estar nulo.")
     private Boolean ativo;
 }

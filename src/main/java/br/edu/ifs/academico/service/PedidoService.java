@@ -79,7 +79,7 @@ public class PedidoService {
                 pedidoRepository.deleteById(codigoPedido);
             }
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir um Pedido!");
+            throw new DataIntegrityException("Não é possível excluir o Pedido!");
         }
     }
 

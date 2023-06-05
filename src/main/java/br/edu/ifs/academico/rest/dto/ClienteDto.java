@@ -1,6 +1,5 @@
 package br.edu.ifs.academico.rest.dto;
 
-import br.edu.ifs.academico.model.ClienteModel;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;

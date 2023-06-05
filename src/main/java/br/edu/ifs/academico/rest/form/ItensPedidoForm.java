@@ -7,7 +7,6 @@ import javax.validation.constraints.*;
 @Data
 public class ItensPedidoForm {
 
-    @NotEmpty
     @NotNull(message = "A quantidade não pode ser nula.")
     private Integer quantidade;
 

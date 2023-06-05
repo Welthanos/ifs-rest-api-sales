@@ -78,7 +78,7 @@ public class ItensPedidoService {
                 itensPedidoRepository.deleteById(codigoItensPedido);
             }
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir um ItensPedido!");
+            throw new DataIntegrityException("Não é possível excluir o(s) Item(ns) do Pedido!");
         }
     }
 

@@ -46,7 +46,7 @@ public class LoginService {
             loginNovo = loginRepository.save(loginNovo);
             return convertLoginModelToLoginDto(loginNovo);
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) de Login não foi(foram) preenchido(s).");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) do Login não foi(foram) preenchido(s).");
         }
     }
 
@@ -63,7 +63,7 @@ public class LoginService {
                 throw new DataIntegrityException("A Código do Login não existe na base de dados!");
             }
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Campo(s) obrigatório(s) do(a) Login não foi(foram) preenchido(s).");
+            throw new DataIntegrityException("Campo(s) obrigatório(s) do Login não foi(foram) preenchido(s).");
         }
     }
 
@@ -73,7 +73,7 @@ public class LoginService {
                 loginRepository.deleteById(codigoLogin);
             }
         } catch (DataIntegrityViolationException e) {
-            throw new DataIntegrityException("Não é possível excluir o(a) Login!");
+            throw new DataIntegrityException("Não é possível excluir o Login!");
         }
     }
 

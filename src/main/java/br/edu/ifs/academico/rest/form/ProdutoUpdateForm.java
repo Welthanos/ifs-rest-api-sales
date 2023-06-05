@@ -20,12 +20,10 @@ public class ProdutoUpdateForm {
     @Size(max = 256)
     private String descricao;
 
-    @NotEmpty
     @NotNull(message = "O preço do produto não pode ser nulo.")
     @JsonFormat(pattern = "0.00")
     private BigDecimal precoUnitario;
 
-    @NotEmpty
     @NotNull(message = "O campo Ativo não pode estar nulo.")
     private Boolean ativo;
 }

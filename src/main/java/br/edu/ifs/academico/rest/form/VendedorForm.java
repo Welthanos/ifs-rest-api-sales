@@ -26,7 +26,6 @@ public class VendedorForm {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
 
-    @NotEmpty
     @NotNull(message = "O campo Ativo não pode estar nulo.")
     private Boolean ativo;
 }
