@@ -7,8 +7,10 @@ import br.edu.ifs.academico.rest.form.LoginForm;
 import br.edu.ifs.academico.rest.form.LoginUpdateForm;
 import br.edu.ifs.academico.service.exceptions.DataIntegrityException;
 import br.edu.ifs.academico.service.exceptions.ObjectNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -55,7 +57,7 @@ public class LoginService {
             Optional<LoginModel> loginExistente = loginRepository.findById(codigoLogin);
             if (loginExistente.isPresent()) {
                 LoginModel loginAtualizado = loginExistente.get();
-                loginAtualizado.setSenha(loginUpdateForm.getSenha());
+                loginAtualizado.setSenha(new BCryptPasswordEncoder().encode(loginUpdateForm.getSenha()));
                 loginAtualizado.setAtivo(loginUpdateForm.getAtivo());
                 loginRepository.save(loginAtualizado);
                 return convertLoginModelToLoginDto(loginAtualizado);
@@ -80,7 +82,7 @@ public class LoginService {
     private LoginModel convertLoginFormToLoginModel(LoginForm loginForm) {
         LoginModel loginModel = new LoginModel();
         loginModel.setLogin(loginForm.getLogin());
-        loginModel.setSenha(loginForm.getSenha());
+        loginModel.setSenha(new BCryptPasswordEncoder().encode(loginForm.getSenha()));
         loginModel.setAtivo(loginForm.getAtivo());
         return loginModel;
     }
