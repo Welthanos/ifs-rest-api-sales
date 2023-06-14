@@ -18,7 +18,7 @@ public class PedidoForm {
     private Boolean status;
 
     @NotNull(message = "A data e o horário não pode ser nulo.")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private LocalDateTime dataHora;
 
     @NotNull(message = "O campo de Cliente não pode ser nulo.")

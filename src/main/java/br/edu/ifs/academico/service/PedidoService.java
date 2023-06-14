@@ -105,6 +105,10 @@ public class PedidoService {
         pedidoDto.setValor(pedidoModel.getValor());
         pedidoDto.setStatus(pedidoModel.getStatus());
         pedidoDto.setDataHora(pedidoModel.getDataHora());
+        // Código do Cliente
+        pedidoDto.setCodigoCliente(pedidoModel.getClienteModel().getCodigo());
+        // Código do Vendedor
+        pedidoDto.setCodigoVendedor(pedidoModel.getVendedorModel().getCodigo());
         return pedidoDto;
     }
 

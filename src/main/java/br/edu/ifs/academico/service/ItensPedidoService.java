@@ -85,15 +85,13 @@ public class ItensPedidoService {
     private ItensPedidoModel convertItensPedidoFormToItensPedidoModel(ItensPedidoForm itensPedidoForm) {
         ItensPedidoModel itensPedidoModel = new ItensPedidoModel();
         itensPedidoModel.setQuantidade(itensPedidoForm.getQuantidade());
-
         // Código do Pedido
         PedidoModel pedidoModel = new PedidoModel();
         pedidoModel.setCodigo(itensPedidoForm.getCodigoPedido());
         itensPedidoModel.setPedidoModel(pedidoModel);
-
         // Código do Produto
         ProdutoModel produtoModel = new ProdutoModel();
-        produtoModel.setCodigo(itensPedidoForm.getCodigoPedido());
+        produtoModel.setCodigo(itensPedidoForm.getCodigoProduto());
         itensPedidoModel.setProdutoModel(produtoModel);
         return itensPedidoModel;
     }
@@ -102,6 +100,10 @@ public class ItensPedidoService {
         ItensPedidoDto itensPedidoDto = new ItensPedidoDto();
         itensPedidoDto.setCodigoItensPedido(itensPedidoModel.getCodigo());
         itensPedidoDto.setQuantidade(itensPedidoModel.getQuantidade());
+        // Código do Pedido
+        itensPedidoDto.setCodigoPedido(itensPedidoModel.getPedidoModel().getCodigo());
+        // Código do Produto
+        itensPedidoDto.setCodigoProduto(itensPedidoModel.getProdutoModel().getCodigo());
         return itensPedidoDto;
     }
 

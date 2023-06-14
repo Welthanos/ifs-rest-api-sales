@@ -16,7 +16,7 @@ public class PedidoDto {
     @JsonFormat(pattern = "0.00")
     private BigDecimal valor;
     private Boolean status;
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private LocalDateTime dataHora;
     private Long codigoCliente;
     private Long codigoVendedor;
