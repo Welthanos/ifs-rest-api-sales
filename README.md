@@ -28,5 +28,3 @@ Este é um exemplo de código-fonte de uma API REST desenvolvida usando a lingua
 
 - Requisição do tipo <b>GET</b>;
 ![tecnologiasUsadas](src/main/resources/images/requisicao_get.png)
-
-<img src="src/main/resources/images/em-desenvolvimento.png" align="right">
